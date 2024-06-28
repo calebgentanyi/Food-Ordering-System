@@ -1,0 +1,16 @@
+# CMake minimum version required
+cmake_minimum_required(VERSION 3.10)
+
+# Project name (use a valid project name without spaces)
+project(FoodOrderingSystem)
+
+# List of source files
+set(SOURCES
+    Main.cpp
+    Order.cpp
+    OrderManager.cpp
+    Utils.cpp
+)
+
+# Add executable target
+add_executable(${PROJECT_NAME} ${SOURCES})
